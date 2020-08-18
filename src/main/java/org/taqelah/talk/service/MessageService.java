@@ -52,6 +52,12 @@ public class MessageService {
 		return messages.get(message.getId());
 	}
 
+	/**
+	 * Remove Message
+	 * 
+	 * @param messageId
+	 * @return flag
+	 */
 	public boolean deleteMessage(long messageId) {
 		boolean isRemoved = false;
 		messages.remove(messageId);
